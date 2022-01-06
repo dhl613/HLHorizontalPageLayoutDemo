@@ -41,10 +41,11 @@
     UICollectionViewLayoutAttributes *attri = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     
     NSInteger item = indexPath.item;
+    // 总页数
     NSInteger pageNumber = item / (self.rowCount * self.columnCount);
-    
+    // 该页中item的序号
     NSInteger itemInPage = item % (self.rowCount * self.columnCount);
-    
+    // item的所在列、行
     NSInteger col = itemInPage % self.columnCount;
     NSInteger row = itemInPage / self.columnCount;
     
