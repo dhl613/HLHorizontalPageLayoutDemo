@@ -53,7 +53,6 @@
     
     attri.frame = CGRectMake(x, y, self.itemSize.width, self.itemSize.height);
     
-    
     return attri;
 }
 
@@ -85,10 +84,10 @@
         NSInteger numerator = self.collectionView.bounds.size.height - self.sectionInset.top - self.sectionInset.bottom + self.minimumLineSpacing;
         NSInteger denominator = self.minimumLineSpacing + self.itemSize.height;
         NSInteger count = numerator/denominator;
-        _rowCount = count;
-        
+        _rowCount = count >= 1 ? count : 1;
+            
         // minimumLineSpacing itemSize.height不是刚好填满 将多出来的补给minimumLineSpacing
-        if (numerator % denominator) {
+        if ((numerator % denominator) && (count != 1)) {
             self.minimumLineSpacing = (self.collectionView.bounds.size.height - self.sectionInset.top-self.sectionInset.bottom - count * self.itemSize.height) / (CGFloat)(count - 1);
         }
     }
@@ -109,6 +108,10 @@
         }
     }
     return _columnCount;
+}
+- (CGFloat)getCollectViewHeightWithRowCount:(NSInteger)rowCount {
+    CGFloat height = self.itemSize.height * rowCount + self.minimumInteritemSpacing * (rowCount - 1) + self.sectionInset.top + self.sectionInset.bottom;
+    return height;
 }
 
 @end

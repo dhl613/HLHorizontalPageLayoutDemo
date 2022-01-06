@@ -54,18 +54,18 @@ static NSString *const kCellID = @"NumberCollectionViewCellID";
         NSInteger col = 4; // 列数
         
         HLHorizontalPageLayout *layout = [[HLHorizontalPageLayout alloc] init];
-        layout.sectionInset = UIEdgeInsetsMake(0, 5, 0, 5);
+        layout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5);
         layout.minimumInteritemSpacing = 10;
         layout.minimumLineSpacing = 10;
         // item宽
         CGFloat itemWidth = (width - 10 * (col-1) - layout.sectionInset.left - layout.sectionInset.right) / col;
         layout.itemSize = CGSizeMake( itemWidth, itemWidth);
         
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 200, width, itemWidth * 3 + 20) collectionViewLayout:layout];
-        _collectionView.dataSource = self;
-        _collectionView.delegate = self;
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 200, width, [layout getCollectViewHeightWithRowCount:3]) collectionViewLayout:layout];
         _collectionView.pagingEnabled = YES;
         _collectionView.showsVerticalScrollIndicator = NO;
+        _collectionView.dataSource = self;
+        _collectionView.delegate = self;
         [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([NumberCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:kCellID];
         _collectionView.backgroundColor = UIColor.redColor;
     }

@@ -27,13 +27,13 @@
 		F46703A1212FEEA1009B6FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F46703A3212FEEA4009B6FC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F46703A6212FEEA4009B6FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F46703A8212FEEA4009B6FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F46703A9212FEEA4009B6FC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F46703B1212FEED0009B6FC7 /* NumberCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberCollectionViewCell.xib; sourceTree = "<group>"; };
 		F46703B2212FEED0009B6FC7 /* NumberCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberCollectionViewCell.h; sourceTree = "<group>"; };
 		F46703B3212FEED0009B6FC7 /* NumberCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberCollectionViewCell.m; sourceTree = "<group>"; };
 		F46703B6212FEF9B009B6FC7 /* HLHorizontalPageLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLHorizontalPageLayout.h; sourceTree = "<group>"; };
 		F46703B7212FEF9B009B6FC7 /* HLHorizontalPageLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLHorizontalPageLayout.m; sourceTree = "<group>"; };
+		F46703BA21300D56009B6FC7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 		F467038E212FEEA1009B6FC7 = {
 			isa = PBXGroup;
 			children = (
-				F4670399212FEEA1009B6FC7 /* HLHorizontalPageLayoutDemo */,
+				F4670399212FEEA1009B6FC7 /* HLHorizontalPageLayout */,
 				F4670398212FEEA1009B6FC7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +63,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F4670399212FEEA1009B6FC7 /* HLHorizontalPageLayoutDemo */ = {
+		F4670399212FEEA1009B6FC7 /* HLHorizontalPageLayout */ = {
 			isa = PBXGroup;
 			children = (
 				F46703B0212FEEBF009B6FC7 /* HLHorizontalPageLayout */,
@@ -77,10 +77,10 @@
 				F46703B1212FEED0009B6FC7 /* NumberCollectionViewCell.xib */,
 				F46703A3212FEEA4009B6FC7 /* Assets.xcassets */,
 				F46703A5212FEEA4009B6FC7 /* LaunchScreen.storyboard */,
-				F46703A8212FEEA4009B6FC7 /* Info.plist */,
+				F46703BA21300D56009B6FC7 /* Info.plist */,
 				F46703A9212FEEA4009B6FC7 /* main.m */,
 			);
-			path = HLHorizontalPageLayoutDemo;
+			path = HLHorizontalPageLayout;
 			sourceTree = "<group>";
 		};
 		F46703B0212FEEBF009B6FC7 /* HLHorizontalPageLayout */ = {
@@ -118,7 +118,7 @@
 		F467038F212FEEA1009B6FC7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = dhl613;
 				TargetAttributes = {
 					F4670396212FEEA1009B6FC7 = {
@@ -219,6 +219,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -244,7 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -277,6 +278,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -296,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -308,12 +310,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HLHorizontalPageLayoutDemo/Info.plist;
+				DEVELOPMENT_TEAM = S4FMG4X333;
+				INFOPLIST_FILE = "$(SRCROOT)/HLHorizontalPageLayout/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.HLHorizontalPageLayoutDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applex.HLHorizontalPageLayoutDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -324,12 +328,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HLHorizontalPageLayoutDemo/Info.plist;
+				DEVELOPMENT_TEAM = S4FMG4X333;
+				INFOPLIST_FILE = "$(SRCROOT)/HLHorizontalPageLayout/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.HLHorizontalPageLayoutDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applex.HLHorizontalPageLayoutDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
